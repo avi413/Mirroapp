@@ -1,0 +1,24 @@
+{
+  "liveView": {
+    "frameRate": 15,
+    "resolution": "1920x1080"
+  },
+  "storage": {
+    "captureDir": "C:/LOOQA/captures",
+    "processedDir": "C:/LOOQA/processed",
+    "templatesDir": "C:/LOOQA/templates",
+    "eventsDir": "C:/LOOQA/events"
+  },
+  "ai": {
+    "provider": "gemini-nano",
+    "maxParallelJobs": 3,
+    "defaultStyle": "Vogue"
+  },
+  "printing": {
+    "defaultCopies": 1,
+    "queueRetries": 3,
+    "targetPrinters": [
+      "HiTi P525L"
+    ]
+  }
+}

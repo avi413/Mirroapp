@@ -1,0 +1,28 @@
+{
+  "name": "looqa-mirror",
+  "version": "0.1.0",
+  "description": "LOOQA Mirror – interactive selfie mirror platform",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev:backend": "npm --prefix app/backend run dev",
+    "dev:frontend": "npm --prefix app/frontend run dev",
+    "build": "npm --prefix app/backend run build && npm --prefix app/frontend run build",
+    "lint": "npm --prefix app/backend run lint"
+  },
+  "workspaces": [
+    "app/backend",
+    "app/frontend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avi413/Mirroapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avi413/Mirroapp/issues"
+  },
+  "homepage": "https://github.com/avi413/Mirroapp#readme"
+}
