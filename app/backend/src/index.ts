@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import { createServer } from 'http';
 import { WebSocketServer } from 'ws';
 import winston from 'winston';
@@ -31,6 +32,7 @@ async function bootstrap() {
   await camera.initialize();
 
   const app = express();
+  app.use(cors());
   app.use(express.json());
 
   app.get('/health', (_, res) => {
