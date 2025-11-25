@@ -2,12 +2,12 @@ import express from 'express';
 import { createServer } from 'http';
 import { WebSocketServer } from 'ws';
 import winston from 'winston';
-import { CameraService } from '../../camera/cameraService.js';
-import { AIProcessor } from '../../ai/processor.js';
-import { TemplateRenderer } from '../../templates/render.js';
-import { PrinterQueue } from '../../printer/hitiDriver.js';
-import { SessionManager } from '../../sessions/sessionManager.js';
-import { SettingsService } from './config.js';
+import { CameraService } from '../../camera/cameraService';
+import { AIProcessor } from '../../ai/processor';
+import { TemplateRenderer } from '../../templates/render';
+import { PrinterQueue } from '../../printer/hitiDriver';
+import { SessionManager } from '../../sessions/sessionManager';
+import { SettingsService } from './config';
 
 const logger = winston.createLogger({
   transports: [new winston.transports.Console()],
